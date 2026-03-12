@@ -8,6 +8,7 @@ int main()
 {
     cout << "Hello World!\n";
 	cout << "This is a simple E6B Flight Computer program.\n";
+	cout << "This is a test for the program to see if I can pull the code from GitHub and run it in Visual Studio.\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
