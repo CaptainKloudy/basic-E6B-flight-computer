@@ -8,7 +8,9 @@ using namespace std;
 //Given the time and speed
 //Distance formula: sqrt(x-x)^2+(y-y)^2
 
-double speedTimeDist(double distance, double time, double speed)
+
+// Whenever you are using variables from another function in main, make sure the variables match up in the main fucntion when it's delcalred
+double speedTimeDist(double time, double speed)
 {
 	return speed * time;
 }
@@ -24,7 +26,7 @@ int main()
 	cout << "What is your time? (in hours): ";
 	cin >> t;
 
-	// result = speedTimeDist(s, t);
+	result = speedTimeDist(s, t);
 
 	cout << "Total Distance is: " << result << " nm" << endl;
 
