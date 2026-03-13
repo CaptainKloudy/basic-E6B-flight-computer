@@ -8,28 +8,46 @@ using namespace std;
 //Given the time and speed
 //Distance formula: sqrt(x-x)^2+(y-y)^2
 
+double calcFunc(double distance, double speed)
+{
+	double time = (distance / speed) * 60;
+	return time;
+}
 
 // Whenever you are using variables from another function in main, make sure the variables match up in the main fucntion when it's delcalred
-double speedTimeDist(double time, double speed)
-{
+//double speedTimeDist(double time, double speed)
+// {
 	//double distance;
-	return time * speed;
-}
+	//return time * speed;
+// }
 
 int main()
 {
 	cout << "E6B Flight Computer Test Program.\n";
-	double result, s, t;
+	double speed, dist, time;
+
 
 	// Get Data from the User
-	cout << "What is your Ground Speed?: ";
-	cin >> s;
-	cout << "What is your time? (in hours): ";
-	cin >> t;
 
-	result = speedTimeDist(s, t);
+	cout << "Distance Traveled in NM: ";
+	cin >> dist;
 
-	cout << "Total Distance is: " << result << " nm" << endl;
+	cout << "Ground Speed in KTS: ";
+	cin >> speed;
+
+
+	
+
+
+	// Made sure the function could only call 2 variables
+	// result = speedTimeDist(s, t);
+
+	//When calling functions make sure that the variables are called in order of need
+	time = calcFunc(dist, speed);
+
+	cout << "Total Time is: " << time << " minutes" << endl;
+	// Also make the time return in a hour format
+	cout << "Total Time is: " << time << " hours" << endl;
 
 	return 0;
 
