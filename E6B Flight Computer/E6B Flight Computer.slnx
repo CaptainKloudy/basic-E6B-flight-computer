@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="E6B Flight Computer.vcxproj" />
+  <Project Path="E6B Flight Computer.vcxproj" Id="d424df6c-c904-423b-9e65-13917a28b4c6" />
 </Solution>

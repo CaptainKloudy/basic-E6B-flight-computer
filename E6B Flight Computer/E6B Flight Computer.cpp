@@ -4,6 +4,8 @@
 #include <iostream>
 using namespace std;
 
+//Calculate the total distance using the distance formula
+//Given the time and speed
 double speedTimeDist(double distance, double time, double speed)
 {
 	return speed * time;
