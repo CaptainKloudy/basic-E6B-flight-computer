@@ -24,7 +24,7 @@ double calcFunc(double distance, double speed)
 int main()
 {
 	cout << "E6B Flight Computer Test Program.\n";
-	double speed, dist, time;
+	double speed, dist, timeMin, timeHr;
 
 
 	// Get Data from the User
@@ -43,11 +43,14 @@ int main()
 	// result = speedTimeDist(s, t);
 
 	//When calling functions make sure that the variables are called in order of need
-	time = calcFunc(dist, speed);
+	timeMin = calcFunc(dist, speed);
 
-	cout << "Total Time is: " << time << " minutes" << endl;
+	cout << "Total Time is: " << timeMin << " minutes" << endl;
+	
 	// Also make the time return in a hour format
-	cout << "Total Time is: " << time << " hours" << endl;
+	timeHr = timeMin/60
+	cout << "Total Time is: " << timeHr << " hours" << endl;
+
 
 	return 0;
 
