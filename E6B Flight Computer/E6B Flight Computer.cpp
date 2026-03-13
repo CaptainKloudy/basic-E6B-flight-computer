@@ -4,20 +4,26 @@
 #include <iostream>
 using namespace std;
 
-int main()
+double speedTimeDist(double distance, double time, double speed)
 {
-    cout << "Hello World!\n";
-	cout << "This is a simple E6B Flight Computer program.\n";
-	cout << "This is a test for the program to see if I can pull the code from GitHub and run it in Visual Studio.\n";
+	return speed * time;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+int main()
+{
+	cout << "E6B Flight Computer Test Program.\n";
+	double result, s, t;
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	// Get Data from the User
+	cout << "What is your Ground Speed?: ";
+	cin >> s;
+	cout << "What is your time? (in hours): ";
+	cin >> t;
+
+	// result = speedTimeDist(s, t);
+
+	cout << "Total Distance is: " << result << " nm" << endl;
+
+	return 0;
+
+}
