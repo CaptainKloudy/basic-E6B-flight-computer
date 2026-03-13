@@ -12,8 +12,8 @@ using namespace std;
 // Whenever you are using variables from another function in main, make sure the variables match up in the main fucntion when it's delcalred
 double speedTimeDist(double time, double speed)
 {
-
-	return distance;
+	//double distance;
+	return time * speed;
 }
 
 int main()
