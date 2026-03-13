@@ -10,7 +10,8 @@ using namespace std;
 
 double speedTimeDist(double distance, double time, double speed)
 {
-	return speed * time;
+
+	return distance;
 }
 
 int main()
