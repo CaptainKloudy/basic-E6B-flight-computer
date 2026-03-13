@@ -6,7 +6,7 @@ using namespace std;
 
 //Calculate the total distance using the distance formula
 //Given the time and speed
-//Distance formula: 
+//Distance formula: sqrt(x-x)^2+(y-y)^2
 
 double speedTimeDist(double distance, double time, double speed)
 {
