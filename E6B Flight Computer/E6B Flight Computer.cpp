@@ -8,26 +8,27 @@ using namespace std;
 //Given the time and speed
 //Distance formula: sqrt(x-x)^2+(y-y)^2
 
-double calcFunc(double distance, double speed)
+int calcFunc(int distance, double speed)
 {
-	double time = (distance / speed) * 60;
+	int time = (distance / speed) * 60;
 	return time;
 }
 
-// Whenever you are using variables from another function in main, make sure the variables match up in the main fucntion when it's delcalred
-//double speedTimeDist(double time, double speed)
-// {
-	//double distance;
-	//return time * speed;
-// }
+//Whenever you are using variables from another function in main, make sure the variables match up in the main fucntion when it's delcalred
+double speedTimeDist(double time, double speed)
+ {
+	double distance;
+	return time * speed;
+ }
 
 int main()
 {
 	cout << "E6B Flight Computer Test Program.\n";
-	double speed, dist, timeMin, timeHr;
+	int speed, dist, timeMin;
+	int timeHr;
 
 
-	// Get Data from the User
+	//Get Data from the User
 
 	cout << "Distance Traveled in NM: ";
 	cin >> dist;
@@ -35,21 +36,17 @@ int main()
 	cout << "Ground Speed in KTS: ";
 	cin >> speed;
 
-
-	
-
-
-	// Made sure the function could only call 2 variables
-	// result = speedTimeDist(s, t);
+	//Made sure the function could only call 2 variables
+	//result = speedTimeDist(s, t);
 
 	//When calling functions make sure that the variables are called in order of need
 	timeMin = calcFunc(dist, speed);
 
 	cout << "Total Time is: " << timeMin << " minutes" << endl;
 	
-	// Also make the time return in a hour format
-	timeHr = timeMin/60
-	cout << "Total Time is: " << timeHr << " hours" << endl;
+	//Also make the time return in a hour format
+	timeHr = timeMin / 60;
+	cout << "Total Time is: " << timeHr << " hours and " << timeMin%60 << " minutes." << endl;
 
 
 	return 0;
